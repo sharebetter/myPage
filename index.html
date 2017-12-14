@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <meta charset="utf-8">
+	<title>To Be A Better Me</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/player.css"/>
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css"> 
+   
+   <link rel="icon" type="image/png" href="images/me.png">
+</head>
+
+<body id="top">
+	<div class="videoBox">
+		<video id="video" autoplay loop="loop" muted="" align="middle" preload="auto">
+			<source src="static/video.mp4" type="video/mp4"></source>		
+		</video>
+	</div>
+    <audio src="static/water.mp3" hidden="hidden"></audio>
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
+
+   		<div class="top-bar">
+   			<!--<a class="menu-toggle" href="#"><span>Menu</span></a>-->
+
+	   		<div class="logo">
+		         <a href="index.html">ZHM</a>
+		      </div>		      
+
+		   	<!--<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+						<li><a href="styles.html" title="">Style Demo</a></li>				
+					</ul>
+				</nav>    		-->
+   		</div> 
+   		
+   	</div> 	
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
+    	
+    
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<!--<h5>Hello, World.</h5>-->
+	   			<h2>To Be A Better Me</h2>
+
+	   			<p class="intro-position">
+	   				<span>路漫漫其修远兮</span>
+	   				<span>吾将上下而求索</span> 
+	   			</p>
+
+	   			<!--<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>-->
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+         <li><a href="http://blog.zhmblog.cn" target="_blank"><img src="images/blog.png"/><p>MyBlog</p></a></li>
+         <li><a href="https://github.com/sharebetter"><img src="images/github.png"/><p>GitHub</p></a></li>
+         <li><a href="#"><img src="images/project.png"/><p>Project</p></li>
+         <li><a href="#"><img src="images/resume.png"/><p>Resume</p></a></li>
+      </ul> <!-- /intro-social -->      	
+
+   </section> 
+   <div id="QPlayer">
+<div id="pContent">
+	<div id="player">
+		<span class="cover"></span>
+		<div class="ctrl">
+			<div class="musicTag marquee">
+				<strong>Title</strong>
+				 <span> - </span>
+				<span class="artist">Artist</span>
+			</div>
+			<div class="progress">
+				<div class="timer left">0:00</div>
+				<div class="contr">
+					<div class="rewind icon"></div>
+					<div class="playback icon"></div>
+					<div class="fastforward icon"></div>
+				</div>
+				<div class="right">
+					<div class="liebiao icon"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ssBtn">
+	        <div class="adf"></div>
+    </div>
+</div>
+<ol id="playlist"></ol>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.marquee.min.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+   	 myVid=document.getElementById("video");
+     myVid.playbackRate=0.65;
+	 var playlist = [
+		  {title:"我好像在哪见过你",artist:"薛之谦",mp3:"static/music/薛之谦 - 我好像在哪见过你.mp3",cover:"static/artist/薛之谦.jpg?param=106x106",},		  
+		  {title:"暧昧",artist:"薛之谦",mp3:"static/music/薛之谦 - 暧昧.mp3",cover:"static/artist/薛之谦.jpg?param=106x106",},		 
+		  {title:"演员",artist:"薛之谦",mp3:"static/music/薛之谦 - 演员.mp3",cover:"static/artist/薛之谦.jpg?param=106x106",}
+		];
+	  var isRotate = true;
+	  var autoplay = false;
+   </script>
+   <script src="js/player.js"></script>
+   <script>
+
+</script>
+  </body>
+  </html>
