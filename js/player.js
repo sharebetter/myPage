@@ -98,7 +98,7 @@
 		}
 
 		isInitMarquee = true;
-		$('audio').remove();
+		$('audio').not('#audio').remove();
 		loadMusic(track);
 		play();
 	}
@@ -228,7 +228,7 @@
 		var mA = $("#QPlayer");
 		if ($('.ssBtn .adf').hasClass('on') === false) {
 			if (isFirstPlay) {
-			    setTimeout("showTips('#player .cover','点击封面开启(关闭)随机播放', " + function(){setTimeout("showTips('#player .ctrl .musicTag','点击拖动标题栏快进(快退)')", 1000)} + ");", 500);
+//			    setTimeout("showTips('#player .cover','点击封面开启(关闭)随机播放', " + function(){setTimeout("showTips('#player .ctrl .musicTag','点击拖动标题栏快进(快退)')", 1000)} + ");", 500);
 			    isFirstPlay = !isFirstPlay;
 			    localStorage.qplayer = 'false';
 			}
