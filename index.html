@@ -26,7 +26,7 @@
 			<source src="static/video.mp4" type="video/mp4"></source>		
 		</video>
 	</div>
-    <audio src="static/water.mp3" hidden="hidden"></audio>
+    <audio id="audio" src="static/water.mp3" hidden="hidden"></audio>
 	<!-- header 
    ================================================== -->
    <header>   	
@@ -84,7 +84,7 @@
 
    	<ul class="intro-social">        
          <li><a href="http://blog.zhmblog.cn" target="_blank"><img src="images/blog.png"/><p>MyBlog</p></a></li>
-         <li><a href="https://github.com/sharebetter" target="_blank"><img src="images/github.png"/><p>GitHub</p></a></li>
+         <li><a href="https://github.com/sharebetter"><img src="images/github.png"/><p>GitHub</p></a></li>
          <li><a href="#"><img src="images/project.png"/><p>Project</p></li>
          <li><a href="#"><img src="images/resume.png"/><p>Resume</p></a></li>
       </ul> <!-- /intro-social -->      	
@@ -132,7 +132,7 @@
 		  {title:"演员",artist:"薛之谦",mp3:"static/music/薛之谦 - 演员.mp3",cover:"static/artist/薛之谦.jpg?param=106x106",}
 		];
 	  var isRotate = true;
-	  var autoplay = true;
+	  var autoplay = false;
    </script>
    <script src="js/player.js"></script>
    <script>
