@@ -2,15 +2,24 @@
 
 html {
 	font-size: 10px;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-webkit-user-select: none;
+-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+-webkit-user-select: none;
+-moz-user-focus: none;
+-moz-user-select: none;
+}
+a,a:hover,a:active,a:visited,a:link,a:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
 }
 .videoBox {
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: -100;
+    background-color: #87CEEB;
 }	
 #video{
     position: absolute;
@@ -22,7 +31,7 @@ html {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    opacity: 0.5;
+    opacity: 0.5;    
 }
 @media only screen and (max-width:1024px) {
 	html {
