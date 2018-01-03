@@ -1,13 +1,30 @@
 $(function(){
 	$('.intro-social li').mouseenter(function(){
   		$(this).addClass('over').siblings().removeClass('over');
-  		let audio = $('audio')[0]
+  		let audio = $('#audio')[0];
   		audio.play()
-   });
-//	bgChange();
-//	function bgChange(){
-//		var lis= $('.lib');
-//		for(var i=0; i<lis.length; i+=2)
-//		lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
-//	}
+    });
+    function IsPC() {
+	    var userAgentInfo = navigator.userAgent;
+	    var Agents = ["Android", "iPhone",
+	                "SymbianOS", "Windows Phone",
+	                "iPad", "iPod"];
+	    var flag = true;
+	    for (var v = 0; v < Agents.length; v++) {
+	        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+	            flag = false;
+	            break;
+	        }
+	    }
+	    return flag ;
+	}
+   	var isPc=IsPC();
+   	var myVid=$("#video");
+	var videoBox=$("#videoBox")
+	if(!isPc){
+	  videoBox.html('<img src="images/backg.jpg" id="vImg"/>')
+   }else{
+   	  videoBox.html('<video id="video" autoplay loop="loop" muted="" align="middle" preload="auto"><source src="static/video.mp4" type="video/mp4"></source></video>')
+   }
+		  
 })
