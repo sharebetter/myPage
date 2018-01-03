@@ -23,7 +23,7 @@ $(function(){
 	var videoBox=$("#videoBox")
 	if(!isPc){
  -	  videoBox.html('<img src="http://oxto2zus6.bkt.clouddn.com/backg.jpg" id="vImg"/>')
- -      }else{
+ -      }else{ 
      	  videoBox.html('<video id="video" autoplay loop="loop" muted="" align="middle" preload="auto"><source src="http://oxto2zus6.bkt.clouddn.com/vooo.mp4" type="video/mp4"></source></video>')
         }		  
 })
