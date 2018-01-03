@@ -19,7 +19,8 @@ a,a:hover,a:active,a:visited,a:link,a:focus{
     height: 100%;
     position: fixed;
     z-index: -100;
-    background-color: #87CEEB;
+    background:url(http://oxto2zus6.bkt.clouddn.com/backg.jpg) no-repeat;
+    background-size: 100% 100%;
 }	
 #video{
     position: absolute;
