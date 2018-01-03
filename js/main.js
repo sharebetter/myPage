@@ -23,6 +23,6 @@ $(function(){
 	var videoBox=$("#videoBox")
 
 	if(isPc){
-     	  videoBox.html('<video id="video" autoplay loop="loop" muted="" align="middle" preload="auto"><source src="http://oxto2zus6.bkt.clouddn.com/vooo.mp4" type="video/mp4"></source></video>')
+     	  videoBox.html('<video id="video" autoplay loop="loop" muted="" align="middle" preload="auto"><source src="http://oxto2zus6.bkt.clouddn.com/bg_video2.mp4" type="video/mp4"></source></video>')
         }		  
 })
